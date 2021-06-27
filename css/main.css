@@ -387,7 +387,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  color: rgba(36, 42, 69, 0.5);
+  color: #242A45;
   background-color: #fff;
 }
 
@@ -414,5 +414,80 @@ img {
   padding-right: 165px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-header {
+  padding-top: 48px;
+  background-color: #fff;
+}
+
+.sitenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sitenav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__item {
+  margin-right: 48px;
+}
+
+.sitenav__link {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: #242A45;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.sitenav__link:hover {
+  color: #FA5959;
+}
+
+.sitenav__login {
+  padding: 12px 34px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FA5959;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+          box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.sitenav__login:hover {
+  color: #FA5959;
+  border-color: #FA5959;
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

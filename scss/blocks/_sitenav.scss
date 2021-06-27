@@ -1,0 +1,46 @@
+.sitenav {
+    @include d-f;
+    justify-content: space-between;  
+}
+.sitenav__links{
+    @include d-f;
+}
+.sitenav__list {
+    @include list-style;
+}
+.sitenav__item {
+    margin-right: 48px;
+    
+}
+.sitenav__link {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    color: $text-color;
+    text-decoration: none;
+    transition: color .2s ease;
+
+    &:hover {
+        color: $button-bg-danger;
+    }
+}
+.sitenav__login {
+    padding: 12px 34px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $button-bg-danger;
+    border: 2px solid transparent;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    text-decoration: none;
+    
+    &:hover{
+        color: $button-bg-danger;
+        border-color: $button-bg-danger;
+        background-color: #fff;
+    }
+}
