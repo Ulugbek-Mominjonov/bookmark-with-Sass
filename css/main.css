@@ -383,6 +383,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 85px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -504,11 +505,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
-  padding-top: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
 }
 
 .dropdown {
@@ -581,7 +588,6 @@ img {
 
 @media only screen and (max-width: 768px) {
   .sitenav__container {
-    position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 50px;
@@ -704,6 +710,7 @@ img {
   height: 496px;
   top: 0;
   right: 0;
+  margin-top: 80px;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -788,6 +795,7 @@ img {
         -ms-flex-order: -1;
             order: -1;
     margin-bottom: 80px;
+    margin-top: 40px;
   }
   .hero__info {
     width: 70%;
@@ -847,6 +855,15 @@ img {
   }
   .hero-link {
     padding: 10px 17px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .hero-link {
+    padding: 5px 5px;
+  }
+  .hero-link--google {
+    margin-right: 8px;
   }
 }
 /*# sourceMappingURL=main.css.map */

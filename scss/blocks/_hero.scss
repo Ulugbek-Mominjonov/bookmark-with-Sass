@@ -10,6 +10,7 @@
         height: 496px;
         top: 0;
         right: 0;
+        margin-top: 80px;
         background-image: url("../../img/hero-bg.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -77,6 +78,7 @@
             position: static;
             order: -1;
             margin-bottom: 80px;
+            margin-top: 40px;
         }
         &__info{
             width: 70%;
@@ -135,5 +137,13 @@
     }
     .hero-link{
         padding: 10px 17px;
+    }
+}
+@include breakpoint-down(390px){
+    .hero-link{
+        padding: 5px 5px;
+    }
+    .hero-link--google{
+        margin-right: 8px;
     }
 }
