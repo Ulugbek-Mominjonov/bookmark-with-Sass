@@ -1,7 +1,11 @@
-.sitenav {
+.sitenav__container {
     @include d-f;
     justify-content: space-between;
-    margin-bottom: 100px;  
+    margin-bottom: 100px;
+    padding-top: 48px;
+}
+.dropdown {
+    display: none;
 }
 .sitenav__links{
     @include d-f;
@@ -44,5 +48,101 @@
         color: $button-bg-danger;
         border-color: $button-bg-danger;
         background-color: #fff;
+    }
+}
+.sitenav__socials-networs{
+    display: none;
+}
+
+@include breakpoint-down (768px) {
+    .sitenav__container{
+        position: relative;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .sitenav__container--open{
+        background-color: rgba(36, 42, 69, 0.95);   
+    }
+    .dropdown{
+        display: block;
+        width: 20px;
+        height: 16px;
+        padding: 0;
+        background-image: url("../../img/hamburger-icon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        background-color: transparent;
+    }
+    .dropdown--open {
+        background-image: url("../../img/site-toggler-close.svg");
+    }
+    .sitenav__links{
+        display: none;
+        height: calc(100vh - 73px);
+        position: absolute;
+        padding: 40px 60px;
+        flex-direction: column;
+        width: 100%;
+        top: 99%;
+        left: 0;
+        z-index: 99;
+        background-color: rgba(36, 42, 69, 0.95);
+        transform: translateY(-100%);
+        transition: 0.3s;
+        animation: translateY 0.3s linear 1 forwards;
+    }
+    .sitenav__links--open{
+        display: flex;
+    }
+    .sitenav__list{
+        width: 100%;
+        flex-direction: column;
+    }
+    .sitenav__item{
+        margin-right: 0;
+        text-align: center;
+        border-top: 2px solid rgba(255, 255, 255, 0.15);
+    }
+    .sitenav__item:last-child{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    }
+    .sitenav__link{
+        display: inline-block;
+        padding: 24px 0;
+        width: 100%;
+        font-size: 20px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 2.30769px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .sitenav__login{
+        width: 100%;
+        padding: 16px;
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 17px;
+        letter-spacing: 2.30769px;
+        color: #FFFFFF;
+        text-align: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+    .sitenav__socials-networs{
+        display: flex;
+        margin-top: auto;
+    }
+    .sitenav__social-network--facebook{
+        margin-right: 40px;
+    }
+}
+@include breakpoint-down(500px){
+    .sitenav__links{
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }

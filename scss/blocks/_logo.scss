@@ -1,0 +1,15 @@
+.logo{
+    @include d-f;
+    flex-shrink: 1;
+}
+.logo__img--toggle {
+    circle {
+        fill: #fff;
+    }
+    path:first-child{
+        fill: #fff;
+    }
+    path:last-child{
+        fill: #222;
+    }
+}
