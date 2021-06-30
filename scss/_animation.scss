@@ -6,3 +6,11 @@
         transform: translateY(0);
     }
 }
+@keyframes tabsanimation {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
