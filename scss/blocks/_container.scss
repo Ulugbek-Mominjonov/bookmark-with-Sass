@@ -9,8 +9,8 @@
 
 @include breakpoint-down(1200px){
     .container{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 @include breakpoint-down(992px){
