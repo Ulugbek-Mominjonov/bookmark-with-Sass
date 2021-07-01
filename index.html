@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project name</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- HEADER START  -->
@@ -25,7 +25,7 @@
           <div class="sitenav__links">
             <ul class="sitenav__list">
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">FEATURES</a>
+                <a class="sitenav__link" href="#features">FEATURES</a>
               </li>
               <li class="sitenav__item">
                 <a class="sitenav__link" href="#">PRICING</a>
@@ -73,8 +73,9 @@
     <!-- MAIN START  -->
 
     <!-- features  -->
-    <!-- <!-- <main> -->
-      <section class="features">
+    <main>
+      <!-- features -->
+      <section class="features" id="features">
         <div class="features__conatiner container">
           <header class="features__header section-header">
             <h2 class="features__title section-header__title">Features</h2>
@@ -123,7 +124,41 @@
           </div>
         </div>
       </section>
-    </main> -->
+
+      <!-- extension -->
+      <section class="extension" id="extension">
+        <div class="container extension-container">
+          <header class="extension__header section-header">
+            <h2 class="extension__title section-header__title">Download the extension</h2>
+            <p class="extension__info section-header__info">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+          </header>
+          <ul class="extension__list">
+            <li class="extension__item extension__item--google">
+              <img class="extension__img" src="img/chrome.svg" alt="chrome" width="102" height="100">
+              <h3 class="extension__name">Add to Chrome</h3>
+              <p class="extension__version">Minimum version 62</p>
+              <div class="dots"></div>
+              <a class="extension__link" href="#">Add & Install Extension</a>
+            </li>
+            <li class="extension__item extension__item--firefox">
+              <img class="extension__img" src="img/firefox.svg" alt="firefox" width="102" height="100">
+              <h3 class="extension__name">Add to Firefox</h3>
+              <p class="extension__version">Minimum version 55</p>
+              <div class="dots"></div>
+              <a class="extension__link" href="#">Add & Install Extension</a>
+            </li>
+            <li class="extension__item extension__item--opera">
+              <img class="extension__img" src="img/opera.svg" alt="opera" width="102" height="100">
+              <h3 class="extension__name">Add to Opera</h3>
+              <p class="extension__version">Minimum version 46</p>
+              <div class="dots"></div>
+              <a class="extension__link" href="#">Add & Install Extension</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+    </main>
     <!-- MAIN END  -->
 
     <!-- FOOTER START  -->

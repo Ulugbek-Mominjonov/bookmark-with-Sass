@@ -73,14 +73,14 @@
         width: 20px;
         height: 16px;
         padding: 0;
-        background-image: url("../../img/hamburger-icon.svg");
+        background-image: url("../img/hamburger-icon.svg");
         background-repeat: no-repeat;
         background-size: contain;
         border: none;
         background-color: transparent;
     }
     .dropdown--open {
-        background-image: url("../../img/site-toggler-close.svg");
+        background-image: url("../img/site-toggler-close.svg");
     }
     .sitenav__links{
         display: none;

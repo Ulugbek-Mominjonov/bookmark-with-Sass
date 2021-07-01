@@ -34,5 +34,33 @@ window.addEventListener('DOMContentLoaded', () => {
             })
             document.querySelector(link.getAttribute('href')).classList.add('panel--active');
         })
-    })
+    });
+
+    // ADD MARGIN FOR EXTENSION 
+    // let extensionItem = document.querySelectorAll('.extension__item');
+    // if(window.innerWidth > 992){
+    //     console.log(window.innerWidth);
+    //     let defaultMargin = 0;
+    //     let stepMargin = 40;
+    //     function addMargin () {
+    //         extensionItem.forEach(item => {
+    //             item.style.marginTop = `${defaultMargin}px`;
+    //             defaultMargin += stepMargin;
+    //         })  
+    //     }
+    //     addMargin();
+    // }
+    // DOTS 
+    let dots = document.querySelectorAll('.dots');
+    function createDot (){
+        dots.forEach(item => {
+            for (let i = 0; i < 17; i++) {
+                let dot = document.createElement('div');
+                dot.classList.add('dot');
+                item.appendChild(dot); 
+            }
+        })
+    }
+    createDot()
+
 })
