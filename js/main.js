@@ -63,4 +63,20 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     createDot()
 
+    // QUESTIONS 
+    let questionBtn = document.querySelectorAll('.questions__button');
+
+    questionBtn.forEach( item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('questions__button--active');
+            let content = item.nextElementSibling;
+            if(content.style.maxHeight){
+                content.style.maxHeight = null;
+            }
+            else{
+                content.style.maxHeight = `${content.scrollHeight}px`;
+            }
+        })
+    })
+
 })

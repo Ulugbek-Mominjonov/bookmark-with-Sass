@@ -1,9 +1,12 @@
+.extension{
+    margin-bottom: 140px;
+}
 .extension__header{
     margin-bottom: 48px;
 }
 .extension__list {
     @include list-style;
-    // justify-content: space-between;
+    align-items: flex-start;
 
 }
 .extension__item {
