@@ -23,6 +23,11 @@ body {
   color: $text-color;
   background-color: #F2F2F2;
 }
+@include breakpoint-down(768px){
+  body{
+    margin-top: 65px;
+  }
+}
 img {
   max-width: 100%;
   display: block;

@@ -141,6 +141,9 @@
     }
 }
 @include breakpoint-down(390px){
+    .hero::after{
+        background-image: url("../img/mobile-hero-bg.png");
+    }
     .hero-link{
         padding: 5px 5px;
     }

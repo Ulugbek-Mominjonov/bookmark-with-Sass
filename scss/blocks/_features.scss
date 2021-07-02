@@ -4,4 +4,8 @@
 .features__header{
     margin-bottom: 72px;
 }
-
+@include breakpoint-down(500px){
+    .features{
+        margin-bottom: 80px;
+    }
+}

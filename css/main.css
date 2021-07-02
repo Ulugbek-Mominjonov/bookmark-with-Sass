@@ -392,6 +392,12 @@ body {
   background-color: #F2F2F2;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 65px;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -882,6 +888,9 @@ img {
 }
 
 @media only screen and (max-width: 390px) {
+  .hero::after {
+    background-image: url("../img/mobile-hero-bg.png");
+  }
   .hero-link {
     padding: 5px 5px;
   }
@@ -896,6 +905,12 @@ img {
 
 .features__header {
   margin-bottom: 72px;
+}
+
+@media only screen and (max-width: 500px) {
+  .features {
+    margin-bottom: 80px;
+  }
 }
 
 .section-header {
