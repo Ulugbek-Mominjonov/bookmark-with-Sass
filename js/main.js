@@ -79,4 +79,48 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    // FORM 
+    let submitBtn = document.querySelector('.contact__button'),
+        emailInput = document.querySelector('.contact__input'),
+        emailLabel = document.querySelector('.contact__label'),
+        alerting = document.querySelector('.contact__alert')
+
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        let inputValue = emailInput.value;
+        if(inputValue == ""){
+            alerting.textContent = 'Please fill out this field';
+            emailLabel.classList.add('contact__label--active');
+        }
+        else if(inputValue.match(/ /g)){
+            alerting.textContent = "don't use ' ' symbol";
+            emailLabel.classList.add('contact__label--active');
+        }
+        else if(inputValue.match(/@/g)){
+            // cuting symbols after "@" from inputValue
+            let cuting = inputValue.slice(inputValue.search("@") + 1, inputValue.length); 
+            
+            // get cut elemts to array 
+            let arr = cuting.split("");
+
+            // finding to dot 
+            let dot = arr.indexOf('.');
+
+            // check out 
+            if((arr[dot - 1] && arr[dot + 1]) && arr[dot + 1] != "."){
+                emailLabel.classList.remove('contact__label--active');
+                alert("Thanks, accept your message");
+            }
+            else{
+                alerting.textContent = "Whoops, make sure it’s an email";
+                emailLabel.classList.add('contact__label--active');
+            }
+        }
+        else{
+            alerting.textContent = "Whoops, make sure it’s an email";
+            emailLabel.classList.add('contact__label--active');
+        }
+    })
+
 })
