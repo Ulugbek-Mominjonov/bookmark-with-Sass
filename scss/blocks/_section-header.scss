@@ -18,3 +18,17 @@
     margin: 0;
     color: $text-color-opacity;
 }
+@include breakpoint-down(500px){
+    .section-header{
+        max-width: 100%;
+
+        &__title{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__info {
+            font-size: 15px;
+            line-height: 25px;      
+        }
+    }
+}
