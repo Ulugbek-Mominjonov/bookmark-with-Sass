@@ -7,6 +7,7 @@
 }
 .sitenav__container {
     @include d-f;
+    position: relative;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
