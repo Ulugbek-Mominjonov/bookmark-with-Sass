@@ -1,14 +1,16 @@
-.sitenav__container {
-    @include d-f;
+.sitenav {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
+}
+.sitenav__container {
+    @include d-f;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 .dropdown {
     display: none;
@@ -21,7 +23,7 @@
 }
 .sitenav__item {
     margin-right: 48px;
-    
+
 }
 .sitenav__link {
     font-size: 13px;
@@ -49,7 +51,7 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s ease;
-    
+
     &:hover{
         color: $button-bg-danger;
         border-color: $button-bg-danger;
@@ -66,7 +68,7 @@
         margin-bottom: 50px;
     }
     .sitenav__container--open{
-        background-color: rgba(36, 42, 69, 0.95);   
+        background-color: rgba(36, 42, 69, 0.95);
     }
     .dropdown{
         display: block;

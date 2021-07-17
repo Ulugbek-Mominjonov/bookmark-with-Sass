@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: $text-color;
-  background-color: #F2F2F2;
+  background-color: #fff;
 }
 @include breakpoint-down(768px){
   body{

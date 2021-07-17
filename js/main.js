@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // TOGLER 
+    // TOGLER
     let siteNav = document.querySelector('.sitenav__container'),
         togglerBtn = document.querySelector('.dropdown'),
         toggleMenu = document.querySelector('.sitenav__links'),
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     };
 
-    // TABS 
+    // TABS
     let tabsItem = document.querySelectorAll('.tabs__item'),
         tabsLink = document.querySelectorAll('.tabs__link'),
         tabsPanels = document.querySelectorAll('.panel')
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
             tabsItem.forEach(item => {
                 item.classList.remove('tabs__item--active');
             });
-            
+
             link.parentElement.classList.add('tabs__item--active');
 
             tabsPanels.forEach(panel => {
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 
-    // ADD MARGIN FOR EXTENSION 
+    // ADD MARGIN FOR EXTENSION
     // let extensionItem = document.querySelectorAll('.extension__item');
     // if(window.innerWidth > 992){
     //     console.log(window.innerWidth);
@@ -46,24 +46,24 @@ window.addEventListener('DOMContentLoaded', () => {
     //         extensionItem.forEach(item => {
     //             item.style.marginTop = `${defaultMargin}px`;
     //             defaultMargin += stepMargin;
-    //         })  
+    //         })
     //     }
     //     addMargin();
     // }
-    // DOTS 
+    // DOTS
     let dots = document.querySelectorAll('.dots');
     function createDot (){
         dots.forEach(item => {
             for (let i = 0; i < 17; i++) {
                 let dot = document.createElement('div');
                 dot.classList.add('dot');
-                item.appendChild(dot); 
+                item.appendChild(dot);
             }
         })
     }
     createDot()
 
-    // QUESTIONS 
+    // QUESTIONS
     let questionBtn = document.querySelectorAll('.questions__button');
 
     questionBtn.forEach( item => {
@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    // FORM 
+    // FORM
     let submitBtn = document.querySelector('.contact__button'),
         emailInput = document.querySelector('.contact__input'),
         emailLabel = document.querySelector('.contact__label'),
@@ -99,15 +99,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         else if(inputValue.match(/@/g)){
             // cuting symbols after "@" from inputValue
-            let cuting = inputValue.slice(inputValue.search("@") + 1, inputValue.length); 
-            
-            // get cut elemts to array 
+            let cuting = inputValue.slice(inputValue.search("@") + 1, inputValue.length);
+
+            // get cut elemts to array
             let arr = cuting.split("");
 
-            // finding to dot 
+            // finding to dot
             let dot = arr.indexOf('.');
 
-            // check out 
+            // check out
             if((arr[dot - 1] && arr[dot + 1]) && arr[dot + 1] != "."){
                 emailLabel.classList.remove('contact__label--active');
                 alert("Thanks, accept your message");
